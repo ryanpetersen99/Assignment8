@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import za.ac.cput.Domain.Civilian.Complainant;
+import za.ac.cput.E_DocketApplication;
 import za.ac.cput.Factory.Civilian.ComplainantFactory;
 import za.ac.cput.Repository.Civilian.ComplainantRepository;
 import za.ac.cput.Repository.Implementation.Civillian.ComplainantRepositoryImplementation;
@@ -15,7 +16,7 @@ import java.io.IOException;
 import java.util.Set;
 
 
-@SpringBootTest
+@SpringBootTest(classes = E_DocketApplication.class)
 @RunWith(SpringRunner.class)
 public class ComplainantRepositoryImplementationTest {
 
